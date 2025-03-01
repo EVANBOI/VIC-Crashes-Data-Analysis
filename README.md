@@ -1,13 +1,13 @@
 # Data Analysis on Fatal Victorian Road Crashes  
 
 ## Project Overview  
-This project analyzes road crash data provided by VICRoads to identify key factors contributing to fatal accidents. The ultimate goal is to support an information campaign aimed at reducing road fatalities.  
+This project analyses road crash data provided by VICRoads to identify key factors contributing to fatal accidents. The ultimate goal is to support an information campaign aimed at reducing road fatalities.  
 
 ## Data Analysis Stages  
 
 ### Exploratory Data Analysis (EDA)  
 **Objective:**  
-Generate visualizations and summary statistics to uncover patterns and relationships within the dataset.  
+Generate visualisations and summary statistics to uncover patterns and relationships within the dataset.  
 
 **Key Findings:**  
 - The dataset is highly imbalanced, with fatal accidents accounting for only **2%** of cases.  
@@ -30,7 +30,7 @@ A variety of predictive models were tested, including:
 - **Logistic Regression with Lasso and Ridge Regularisation**  
 
 **Evaluation:**  
-The **Gradient Boosting Machine (GBM)** model was selected due to its superior **AUC score**, achieving an **80.7% prediction accuracy** in identifying high-risk fatal accident scenarios.  
+The **Gradient Boosting Machine (GBM)** model was selected due to its superior **AUC score**, achieving an **80.7% prediction accuracy** in identifying high risk fatal accident scenarios.  
 
 ## Key Findings & Implications  
 The most significant predictors of fatal road crashes include:  
