@@ -49,7 +49,7 @@ This analysis provides valuable insights that can inform **policy development an
 
 **Challenges & Solutions:**  
 - **Imbalanced Data:**  
-  - Since only **2%** of cases were fatal accidents, traditional random sampling would lead to an over- or under-representation of fatal crashes in the training and test sets.  
+  - Since only **2%** of cases were fatal accidents, traditional random sampling would lead to an over or under-representation of fatal crashes in the training and test sets.  
   - To address this, **stratified sampling** was used to ensure a more balanced distribution.
   
 ---
