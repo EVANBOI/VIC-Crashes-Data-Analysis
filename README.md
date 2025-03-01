@@ -1,29 +1,55 @@
-# Data Analysis on Fatal Victorian Road Crashes 
-## Project Overview
-The goal of this project is to analyse road crash data provided by VICRoads and identify the key factors that drive fatal accidents with the end aim to target an information campaign. 
-## Data Analysis Stages 
-### Exploratory Data Analysis (EDA)
-Objective: Create visualisations and tables in hopes of identifying patterns and relationships present in the provide dataset.
-Outcomes:
-* Determined that the data provided is imbalanced as 2% of the data are fatal accidents.
-* Identification of potential predictors, i.e. colour of vehicle, age of driver, manufacturing year of vehicle for more detail analysis.
-### Statistical Modelling 
-Approach: Application of logistic regression to ascertain significant predictors of fatal accidents. This is achieved by performing hypothesis tests, and checking if the p-values are above the 5% significance level. A confirmatory test in the form of a deviance table is used to determine whether there is a significant improvement in the model when increasing the model complexity.
-### Predictive Modelling 
-Methodology: A range of predictive models were tested, including K-nearest neighbours, Random forests, logistic regression with lasso and ridge.
-Evaluation: The GBM model was selected due to its superior AUC scores, indicating high accuracy in predicting scenarios with a high risk of fatalities. The model achieved a prediction accuracy of 80.7%.
-## Key Findings & Implications
-Significant Predictors of fatal road crashes:
-* Sex of driver
-* Surface condition of crash
-* Manufacturing year of vehicle
-* Type of vehicle
-* Total number of occupants
-* Not wearing seatbelt
-Performing an analysis of the data provides a foundation for informed decision making and policy development aimed at reducing road fatalities.
-## Technical Details
-Tool Used: R
-Main Challenges: The data is imbalanced, hence to obtain a sample of the data, stratified sampling was considered over the traditional random sampling suhc the number of fatal accidents will not be over/under represented in the training and test sets. 
+# Data Analysis on Fatal Victorian Road Crashes  
 
- 
+## Project Overview  
+This project analyzes road crash data provided by VICRoads to identify key factors contributing to fatal accidents. The ultimate goal is to support an information campaign aimed at reducing road fatalities.  
 
+## Data Analysis Stages  
+
+### Exploratory Data Analysis (EDA)  
+**Objective:**  
+Generate visualizations and summary statistics to uncover patterns and relationships within the dataset.  
+
+**Key Findings:**  
+- The dataset is highly imbalanced, with fatal accidents accounting for only **2%** of cases.  
+- Potential predictors for further analysis include:  
+  - Vehicle color  
+  - Driver age  
+  - Vehicle manufacturing year  
+
+### Statistical Modelling  
+**Approach:**  
+Logistic regression is used to identify significant predictors of fatal accidents. This involves:  
+- **Hypothesis testing** to assess statistical significance (*p-values below 5% indicate significance*).  
+- Using a **deviance table** to evaluate whether increasing model complexity improves predictive performance.  
+
+### Predictive Modelling  
+**Methodology:**  
+A variety of predictive models were tested, including:  
+- **K-Nearest Neighbors (KNN)**  
+- **Random Forests**  
+- **Logistic Regression with Lasso and Ridge Regularization**  
+
+**Evaluation:**  
+The **Gradient Boosting Machine (GBM)** model was selected due to its superior **AUC score**, achieving an **80.7% prediction accuracy** in identifying high-risk fatal accident scenarios.  
+
+## Key Findings & Implications  
+The most significant predictors of fatal road crashes include:  
+- **Driver’s sex**  
+- **Road surface condition** at the time of the crash  
+- **Vehicle manufacturing year**  
+- **Vehicle type**  
+- **Total number of occupants**  
+- **Whether a seatbelt was worn**  
+
+This analysis provides valuable insights that can inform **policy development and targeted interventions** to reduce road fatalities.  
+
+## Technical Details  
+**Tools Used:**  
+- R
+
+**Challenges & Solutions:**  
+- **Imbalanced Data:**  
+  - Since only **2%** of cases were fatal accidents, traditional random sampling would lead to an over- or under-representation of fatal crashes in the training and test sets.  
+  - To address this, **stratified sampling** was used to ensure a more balanced distribution.
+  
+---
