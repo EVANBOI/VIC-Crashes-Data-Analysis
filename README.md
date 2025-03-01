@@ -27,7 +27,8 @@ Logistic regression is used to identify significant predictors of fatal accident
 A variety of predictive models were tested, including:  
 - **K-Nearest Neighbors (KNN)**  
 - **Random Forests**  
-- **Logistic Regression with Lasso and Ridge Regularisation**  
+- **Logistic Regression with Lasso and Ridge Regularisation**
+- **Gradient Boosting Machine**  
 
 **Evaluation:**  
 The **Gradient Boosting Machine (GBM)** model was selected due to its superior **AUC score**, achieving an **80.7% prediction accuracy** in identifying high risk fatal accident scenarios.  
